@@ -28,28 +28,33 @@
     O Skeep é um dinossauro e será o personagem do nosso jogo, ele possui as seguintes características e comportamentos:
 
     Características:
+    
     - energia
     - velocidade
     - temperatura
     - humor
+      
     <br>
-    Comportamentos: 
+    Comportamentos:
+
     - pular()
     - correr()
     - comer()
     - cantar()
     - tomarSol()
     - ficarNaSombra()
+      
     <br>
     Regras:<br>
 
-    O dinossauro precisa:<br>
-    Tomar Sol para aumentar a velocidade, a temperatura, além de deixa-lo com o humor feliz
-    Comer para aumentar a energia, diminui a velocidade, e deixar o humor feliz
-    Correr gasta energia e velocidade, mas deixa o humor feliz
-    ficarNaSombra recupera energia deixa o humor triste e diminui a temperatura
-    cantar gasta energia e deixa o humor feliz
-    pular gasta energia e velocidade e deixa o humor feliz
+    O dinossauro precisa:
+    <br>
+    Tomar Sol para aumentar a velocidade, a temperatura, além de deixa-lo com o humor feliz<br>
+    Comer para aumentar a energia, diminui a velocidade, e deixar o humor feliz<br>
+    Correr gasta energia e velocidade, mas deixa o humor feliz<br>
+    ficarNaSombra recupera energia deixa o humor triste e diminui a temperatura<br>
+    cantar gasta energia e deixa o humor feliz<br>
+    pular gasta energia e velocidade e deixa o humor feliz<br>
     <br>
 
     - Faça uma classe chamada Dinossauro, contendo as características e comportamentos do Skeep.
@@ -65,10 +70,14 @@
       - Co(M)er
       - C(A)ntar
       - Tomar (S)ol
-      - Ficar na S(O)mbra<br>
+      - Ficar na S(O)mbra
+
+        
     - Pegue a primeira letra do que o usuário digitar como sendo a opção escolhida
+      <br>
       - String textoMaiusculo = scan.nextLine().toUpperCase();
       - char letra = textoMaiusculo.charAt(0);
+        
     - Conforme a opção escolhida execute o método correspondente no objeto skeep
 
 <div>
