@@ -32,7 +32,7 @@ Exemplo o README da tarefa 02: [README_TAREFA_02](https://github.com/thiagosilva
 🚧Em andamento 🚧
 
 Tarefas:
-- [Tarefa 01 - Memória Heap e Stack, Classes e Objetos](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_01)
+- [Tarefa 01 - Memórias Heap e Stack, Classes e Objetos](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_01)
   -  ✅ Completo ✅
 - [Tarefa 02 - Construtores, Herança, Agregação e Composição](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_02)
   - 🚧 Falta o ultimo exercício da tarefa 🚧 
