@@ -20,7 +20,9 @@
 
 
 ## Proposta do projeto
-Tarefas da disciplina de POO do curso de Análise e desenvolvimento de sistemas da FATEC Zona Leste
+Tarefas da disciplina de POO do curso de Análise e desenvolvimento de sistemas da FATEC Zona Leste, conforme vou recebendo as tarefas vou atualizando esse repositorio<br>
+Além do código no pacote de cada tarefa estará um README com o enunciado de cada exercício daquela tarefa.<br>
+Exemplo o README da tarefa 02: [README_TAREFA_02](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/blob/main/src/edu/curso/tarefa_02/README_Tarefa_02.md) 
 
 # Tecnologias
 - Linguagem
@@ -29,12 +31,14 @@ Tarefas da disciplina de POO do curso de Análise e desenvolvimento de sistemas 
 # Status do projeto
 🚧Em andamento 🚧
 
-Tarefas finalizadas:
-- [Tarefa 01](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_01)
-- [Tarefa 02](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_02)
+Tarefas:
+- [Tarefa 01 - Memórias Heap e Stack, Classes e Objetos](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_01)
+  -  ✅ Completo ✅
+- [Tarefa 02 - Construtores, Herança, Agregação e Composição](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_02)
+  - 🚧 Falta o ultimo exercício da tarefa 🚧 
 
 ## Agradecimentos
-Agradeço ao professor Antonio e todos os professores da FATEC Zona Leste por todo o aprendizado passado e desafios propostos.
+Agradeço ao professor Antonio Rodrigues Carvalho Neto e todos os professores da FATEC Zona Leste por todo o aprendizado passado e desafios propostos.
 
 ## Autor
 
