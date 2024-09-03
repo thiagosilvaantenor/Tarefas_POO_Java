@@ -38,6 +38,7 @@ public class Teste {
           skeep.ficarNaSombra();
           break;
         case 'R':
+          scan.close();
           break;
         default:
           System.out.println("Opa, opção invalida, tente novamente");
