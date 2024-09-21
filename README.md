@@ -35,7 +35,9 @@ Tarefas:
 - [Tarefa 01 - Memórias Heap e Stack, Classes e Objetos](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_01)
   -  ✅ Completo ✅
 - [Tarefa 02 - Construtores, Herança, Agregação e Composição](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_02)
-  - 🚧 Falta o ultimo exercício da tarefa 🚧 
+  - ✅ Completo ✅
+- [Tarefa 03 - Polimorfistmo e Introdução a JavaFx](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_03)
+  - 🚧 Faltam exercícios 2, 3, 4 e 5
 
 ## Agradecimentos
 Agradeço ao professor Antonio Rodrigues Carvalho Neto e todos os professores da FATEC Zona Leste por todo o aprendizado passado e desafios propostos.
