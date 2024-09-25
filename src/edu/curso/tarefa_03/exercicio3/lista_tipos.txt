@@ -1,0 +1,14 @@
+# Classes:
+- Nobre;
+- Soldado;
+- Conselheiro;
+- Bispo;
+- Padre;
+- Conde;
+- Principe;
+- Rainha.
+
+# Interfaces:
+- Cavaleiro;
+- Diplomata;
+- Fiel.
