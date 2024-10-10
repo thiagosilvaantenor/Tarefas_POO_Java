@@ -1,12 +1,15 @@
 package edu.curso.tarefa_04.exercicio2;
 
-import java.time.LocalDate;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 public class Aluno {
   private long id;
   private String ra;
   private String nome;
-  private LocalDate nascimento;
+  private Date nascimento;
 
   public long getId() {
     return this.id;
@@ -32,12 +35,14 @@ public class Aluno {
     this.nome = nome;
   }
 
-  public LocalDate getNascimento() {
+  public Date getNascimento() {
     return this.nascimento;
   }
 
-  public void setNascimento(LocalDate nascimento) {
-    this.nascimento = nascimento;
+  public void setNascimento(String nascimento) throws ParseException {
+    SimpleDateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");
+    Date data = formatador.parse(nascimento);
+    this.nascimento = data;
   }
 
 }

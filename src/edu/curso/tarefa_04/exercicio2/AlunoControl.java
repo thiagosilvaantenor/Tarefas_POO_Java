@@ -1,9 +1,10 @@
 package edu.curso.tarefa_04.exercicio2;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AlunoControl {
-  private ArrayList<Aluno> alunos = new ArrayList<>();
+  private List<Aluno> alunos = new ArrayList<>();
 
   public void adicionar(Aluno a) {
     if (a != null) {
