@@ -37,7 +37,13 @@ Tarefas:
 - [Tarefa 02 - Construtores, Herança, Agregação e Composição](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_02)
   - ✅ Completo ✅
 - [Tarefa 03 - Polimorfistmo e Introdução a JavaFx](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_03)
-  - 🚧 Faltam exercícios 2, 3, 4 e 5
+  - ✅ Completo ✅
+
+- [Tarefa 04 - BCE (Boundary Control Entity) com JavaFX ](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_04)
+  - ✅ Completo ✅
+
+- [Trabalho Semestral](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/trabalho_semestral/)
+  - 🚧Em construção 🚧
 
 ## Agradecimentos
 Agradeço ao professor Antonio Rodrigues Carvalho Neto e todos os professores da FATEC Zona Leste por todo o aprendizado passado e desafios propostos.
