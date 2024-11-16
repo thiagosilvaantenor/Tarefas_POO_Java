@@ -1,13 +1,13 @@
-package cruds.medicamento;
+package cruds.receita;
 
 import java.time.LocalDate;
 
-public class Medicamento {
+public class Receita {
   private int id;
-  private String nome;
   private LocalDate dataReceita;
   private int pacienteId;
   private String medicoCRM;
+  //receita vai ter uma lista de medicamentos
 
   public int getId() {
     return id;
@@ -23,14 +23,6 @@ public class Medicamento {
 
   public void setId(int id) {
     this.id = id;
-  }
-
-  public String getNome() {
-    return nome;
-  }
-
-  public void setNome(String nome) {
-    this.nome = nome;
   }
 
   public LocalDate getDataReceita() {

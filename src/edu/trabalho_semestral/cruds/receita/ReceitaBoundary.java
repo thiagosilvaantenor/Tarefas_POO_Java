@@ -1,4 +1,4 @@
-package cruds.medicamento;
+package cruds.receita;
 
 import java.time.LocalDate;
 
@@ -20,19 +20,19 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.converter.IntegerStringConverter;
 
-public class MedicamentoBoundary extends Application {
+public class ReceitaBoundary extends Application {
   // Campos e Label
   private Label lbId = new Label("");
-  private TextField txtNome = new TextField("");
   private TextField txtPacienteId = new TextField("");
   private DatePicker dateReceita = new DatePicker(LocalDate.now());
   private TextField txtCRM = new TextField("");
+  //Fazer um campo para medicamentos da receita
 
   // Table
-  private TableView<Medicamento> tableView = new TableView<>();
+  private TableView<Receita> tableView = new TableView<>();
 
   // control
-  private MedicamentoControl control = new MedicamentoControl();
+  private ReceitaControl control = new ReceitaControl();
 
   @Override
   public void start(Stage stage) {
@@ -43,14 +43,12 @@ public class MedicamentoBoundary extends Application {
     // Labels e TextFields
     paneForm.add(new Label("Id: "), 0, 0);
     paneForm.add(lbId, 1, 0);
-    paneForm.add(new Label("Nome: "), 0, 1);
-    paneForm.add(txtNome, 1, 1);
-    paneForm.add(new Label("Id do Paciente: "), 0, 2);
-    paneForm.add(txtPacienteId, 1, 2);
-    paneForm.add(new Label("Data da Receita: "), 0, 3);
-    paneForm.add(dateReceita, 1, 3);
-    paneForm.add(new Label("CRM do Médico: "), 0, 4);
-    paneForm.add(txtCRM, 1, 4);
+    paneForm.add(new Label("Id do Paciente: "), 0, 1);
+    paneForm.add(txtPacienteId, 1, 1);
+    paneForm.add(new Label("Data da Receita: "), 0, 2);
+    paneForm.add(dateReceita, 1, 2);
+    paneForm.add(new Label("CRM do Médico: "), 0, 3);
+    paneForm.add(txtCRM, 1, 3);
 
     // Btns
     Button btnGravar = new Button("Gravar");
@@ -61,13 +59,13 @@ public class MedicamentoBoundary extends Application {
         });
 
     Button btnPesquisar = new Button("Pesquisar");
-    btnPesquisar.setOnAction(e -> control.pesquisarPorNome());
+    btnPesquisar.setOnAction(e -> control.pesquisarPorData());
 
     Button btnLimpar = new Button("*");
     btnLimpar.setOnAction(e -> control.limparTudo());
 
-    paneForm.add(btnGravar, 0, 5);
-    paneForm.add(btnPesquisar, 1, 5);
+    paneForm.add(btnGravar, 0, 4);
+    paneForm.add(btnPesquisar, 1, 4);
     paneForm.add(btnLimpar, 2, 0);
 
     generateColumns();
@@ -78,37 +76,35 @@ public class MedicamentoBoundary extends Application {
 
     Scene scn = new Scene(panePrincipal, 600, 400);
     stage.setScene(scn);
-    stage.setTitle("Cadastro de Medicamentos Receitados");
+    stage.setTitle("Cadastro de Receitas");
     stage.show();
   }
 
   public void generateColumns() {
     // Cria Colunas
-    TableColumn<Medicamento, Integer> col1 = new TableColumn<>("Id");
-    col1.setCellValueFactory(new PropertyValueFactory<Medicamento, Integer>("id"));
+    TableColumn<Receita, Integer> col1 = new TableColumn<>("Id");
+    col1.setCellValueFactory(new PropertyValueFactory<Receita, Integer>("id"));
+    //Pega o valor do atributo da classe modelo, nome deve estar da mesma forma que o atributo
+    
+    TableColumn<Receita, Integer> col2 = new TableColumn<>("PacienteID");
+    col2.setCellValueFactory(new PropertyValueFactory<Receita, Integer>("pacienteId"));
 
-    TableColumn<Medicamento, String> col2 = new TableColumn<>("Nome");
-    col2.setCellValueFactory(new PropertyValueFactory<Medicamento, String>("nome"));
+    TableColumn<Receita, LocalDate> col3 = new TableColumn<>("DataReceita");
+    col3.setCellValueFactory(new PropertyValueFactory<Receita, LocalDate>("dataReceita"));
 
-    TableColumn<Medicamento, Integer> col3 = new TableColumn<>("PacienteID");
-    col3.setCellValueFactory(new PropertyValueFactory<Medicamento, Integer>("pacienteId"));
-
-    TableColumn<Medicamento, LocalDate> col4 = new TableColumn<>("DataReceita");
-    col4.setCellValueFactory(new PropertyValueFactory<Medicamento, LocalDate>("dataReceita"));
-
-    TableColumn<Medicamento, String> col5 = new TableColumn<>("CRM");
-    col5.setCellValueFactory(new PropertyValueFactory<Medicamento, String>("medicoCRM"));
+    TableColumn<Receita, String> col4 = new TableColumn<>("CRM");
+    col4.setCellValueFactory(new PropertyValueFactory<Receita, String>("medicoCRM"));
 
     // Cria o fabricante da Celula
-    Callback<TableColumn<Medicamento, Void>, TableCell<Medicamento, Void>> callback = new Callback<>() {
+    Callback<TableColumn<Receita, Void>, TableCell<Receita, Void>> callback = new Callback<>() {
       @Override
-      public TableCell<Medicamento, Void> call(TableColumn<Medicamento, Void> param) {
-        TableCell<Medicamento, Void> tc = new TableCell<>() {
+      public TableCell<Receita, Void> call(TableColumn<Receita, Void> param) {
+        TableCell<Receita, Void> tc = new TableCell<>() {
           final Button btnExcluir = new Button("Apagar");
           {
             btnExcluir.setOnAction(
                 e -> {
-                  Medicamento m = tableView.getItems().get(getIndex());
+                  Receita m = tableView.getItems().get(getIndex());
                   control.excluir(m);
                 });
           }
@@ -127,15 +123,15 @@ public class MedicamentoBoundary extends Application {
       }
     };
 
-    TableColumn<Medicamento, Void> col6 = new TableColumn<>("Ações");
-    col6.setCellFactory(callback);
+    TableColumn<Receita, Void> col5 = new TableColumn<>("Ações");
+    col5.setCellFactory(callback);
 
-    tableView.getColumns().addAll(col1, col2, col3, col4, col5, col6);
+    tableView.getColumns().addAll(col1, col2, col3, col4, col5);
     tableView.setItems(control.getLista());
 
     tableView.getSelectionModel().selectedItemProperty()
         .addListener((obs, antigo, novo) -> {
-          System.out.println("Selecionado o medicamento ==> " + novo);
+          System.out.println("Selecionado a receita ==> " + novo);
           control.entidadeParaTela(novo);
         });
 
@@ -145,7 +141,6 @@ public class MedicamentoBoundary extends Application {
     // Vincula label e campos com os atributos da controller
     Bindings.bindBidirectional(lbId.textProperty(), control.idProperty(),
         (StringConverter) new IntegerStringConverter());
-    Bindings.bindBidirectional(txtNome.textProperty(), control.nomeProperty());
     Bindings.bindBidirectional(txtPacienteId.textProperty(), control.pacienteIdProperty(),
         (StringConverter) new IntegerStringConverter());
     Bindings.bindBidirectional(dateReceita.valueProperty(), control.dataReceitaProperty());
@@ -153,7 +148,7 @@ public class MedicamentoBoundary extends Application {
   }
 
   public static void main(String[] args) {
-    launch(MedicamentoBoundary.class, args);
+    launch(ReceitaBoundary.class, args);
   }
 
 }

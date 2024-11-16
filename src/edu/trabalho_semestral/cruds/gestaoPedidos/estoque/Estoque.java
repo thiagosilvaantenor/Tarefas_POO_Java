@@ -1,11 +1,11 @@
-package cruds.gestaoPedidos;
+package cruds.gestaoPedidos.estoque;
 
-public class PedidoMedicamento {
+public class Estoque {
   private int id;
+  private String medicamento;
   private int quantidade;
   private String fornecedor;
   private int funcionarioRegistro;
-  private int idMedicamento;
 
   public int getId() {
     return id;
@@ -39,12 +39,12 @@ public class PedidoMedicamento {
     this.funcionarioRegistro = funcionarioRegistro;
   }
 
-  public int getIdMedicamento() {
-    return idMedicamento;
+  public String getMedicamento() {
+    return medicamento;
   }
 
-  public void setIdMedicamento(int idMedicamento) {
-    this.idMedicamento = idMedicamento;
+  public void setMedicamento(String medicamento) {
+    this.medicamento = medicamento;
   }
 
 }
