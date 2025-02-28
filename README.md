@@ -26,10 +26,12 @@ Exemplo o README da tarefa 02: [README_TAREFA_02](https://github.com/thiagosilva
 
 # Tecnologias
 - Linguagem
-  - [Java](https://www.oracle.com/br/java/) 
+  - [Java](https://www.oracle.com/br/java/)
+  - [LibericaJDK21LTS](https://bell-sw.com/pages/downloads/#jdk-21-lts)
+  - [MariaDB Conector J](https://mariadb.com/kb/en/about-mariadb-connector-j/)
 
 # Status do projeto
-🚧Em andamento 🚧
+✅ Completo ✅
 
 Tarefas:
 - [Tarefa 01 - Memórias Heap e Stack, Classes e Objetos](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_01)
@@ -42,8 +44,8 @@ Tarefas:
 - [Tarefa 04 - BCE (Boundary Control Entity) com JavaFX ](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/curso/tarefa_04)
   - ✅ Completo ✅
 
-- [Trabalho Semestral](https://github.com/thiagosilvaantenor/Tarefas_POO_Java/tree/main/src/edu/trabalho_semestral/)
-  - 🚧Em construção 🚧
+- [Trabalho Semestral](https://github.com/thiagosilvaantenor/POO_CRUDs_com_Banco_De_Dados)
+  - ✅ Completo ✅
 
 ## Agradecimentos
 Agradeço ao professor Antonio Rodrigues Carvalho Neto e todos os professores da FATEC Zona Leste por todo o aprendizado passado e desafios propostos.
